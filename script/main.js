@@ -10,3 +10,22 @@ hp : ${monster.hp} </br>
 images : ${monster.images} </br>
 target : ${monster.target} </br>
 `
+
+
+// Daughter Class stuff
+class Blob extends Monster{
+
+    constructor(name, attack, defense, hp, images, target){
+        super(name, attack, defense, hp, images, target);
+    }
+
+    addDOM(){
+
+    }
+
+    suppressDOM(){
+
+    }
+
+
+}
