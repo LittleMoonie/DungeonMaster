@@ -30,7 +30,7 @@ html, body {
     padding: 0;
 
     /* Background Styles */
-    background-image: url("./img/floors/floor0.jpg");
+    background-image: url("./img/floors/floor10.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -393,7 +393,6 @@ html, body {
     font-weight: bold;
 }
 #floor {
-  /* Have it be beside menuButton  */
     position: absolute;
     left: 25%;
     top: 12%;

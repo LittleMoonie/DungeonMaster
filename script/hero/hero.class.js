@@ -113,9 +113,11 @@ export class Hero {
             if(target.hp <= 0) {
                 console.log(`${target.name} has been defeated!`);
                 target.removeFromDom(); // Used in future when we put the hero into the DOM. Also implement hero into the DOM which is probably part 2 of project.
+                return true;
             } 
             else{
             console.log(`${target.name} now has ${target.hp} HP.`);
+            return false;
             }
         }
 
@@ -123,11 +125,17 @@ export class Hero {
         else {
             target.hp -= 1;
             console.log(`${this.name} attacked ${target.name} for 1 damage!`);
-        }
 
-        // If the hero's hp is less than or equal to 0, then the hero's hp is set to 0 and the hero is removed from the DOM
-        if (target.hp <= 0) {
-            target.hp = 0;
+            if(target.hp <= 0) {
+                console.log(`${target.name} has been defeated!`);
+                target.removeFromDom(); // Used in future when we put the hero into the DOM. Also implement hero into the DOM which is probably part 2 of project.
+                return true;
+            }
+
+            else {
+                console.log(`${target.name} now has ${target.hp} HP.`);
+                return false;
+            }
         }
     }
 

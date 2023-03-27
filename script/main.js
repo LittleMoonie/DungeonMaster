@@ -1,14 +1,13 @@
 import { Hero } from './hero/hero.class.js';
 
 import { Monster } from './monsters/monster.class.js';
-import { skelMage } from './monsters/skelMage.class.js';
-import { Orc } from './monsters/orc.class.js';
+import { SkelMage } from './monsters/skelMage.class.js';
 import { Troll } from './monsters/troll.class.js';
 
 
 // Example of how to use the classes for testing the classes made for monsters :
-const skelMage = new skelMage('skelMage', 10000, 5, 100, '../img/monsters/skeletonMage.gif');
-const troll = new Troll('Troll', 20, 15, 100, '../img/monsters/troll.gif');
+const skelMage = new SkelMage('Skeleton Mage', 10000, 5, 100, './img/monsters/skeletonMage.gif');
+const troll = new Troll('Troll', 20, 15, 100, './img/monsters/troll.gif');
 
 console.log(skelMage);
 skelMage.addToDom();
@@ -48,3 +47,6 @@ skelMage.attack(hero);
 console.log(hero.hp); // Appropriate amount of damage should be taken off of the hero's hp
 
 // ONLY TESTING CLASSES HERE ATM WHILE WAITING FOR THE OF THE SUBJECT TO BE GIVEN.
+
+console.log(skelMage.dropLoot())
+hero.autoPickUp(skelMage.dropLoot());

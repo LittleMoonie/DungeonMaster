@@ -37,12 +37,17 @@ export class Troll extends Monster {
     // This is the dropLoot() method from the Monster class.
     // We can override it here to change the behavior of the method.
     dropLoot() {
-        const loot = Math.floor(Math.random() * 3);
-        if (loot === 0) {
+        let loot = "";
+        super.dropLoot();
+        const chance = Math.floor(Math.random() * 2);
+        if (chance === 0) {
             console.log(`${this.name} dropped an HP potion`);
+            return loot = "potion";
+            
         } 
-        else if (item === 1) {
-            console.log(`${this.name} dropped a sword`);
+        else if (chance === 1) {
+            console.log(`${this.name} dropped a weapon`);
+            return loot ="weapon";
         } 
 
         // If we want to add more potions or weapons, we can add them here.

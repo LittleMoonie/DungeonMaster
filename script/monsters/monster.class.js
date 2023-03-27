@@ -75,12 +75,14 @@ export class Monster {
             target.hp -= this._damage - target.defense;
             console.log(`${this.name} attacks ${target.lastname} ${target.firstname} and inflicts ${(this.damage - target.defense)} damage!`);
 
-            if(this.target.hp <= 0) {
-                console.log(`${this.target.name} has been defeated!`);
+            if(target.hp <= 0) {
+                console.log(`${target.lastname} ${target.firstname} has been defeated!`);
                 // target.removeFromDom(); // Used in future when we put the hero into the DOM. Also implement hero into the DOM which is probably part 2 of project.
+                return true;
             } 
             else{
             console.log(`${target.lastname} ${target.firstname} now has ${target.hp} HP.`);
+            return false;
             }
         }
 
@@ -88,15 +90,17 @@ export class Monster {
         else {
             target.hp -= 1;
             console.log(`${this.name} attacked ${target.lastname} ${target.firstname} for 1 damage!`);
-        }
-
-        // If the hero's hp is less than or equal to 0, then the hero's hp is set to 0 and the hero is removed from the DOM
-        if (target.hp <= 0) {
-            target.hp = 0;
-            console.log(`${target.lastname} ${target.firstname} has been defeated!`)
+            if(this.target.hp <= 0) {
+                console.log(`${this.target.name} has been defeated!`);
+                // target.removeFromDom(); // Used in future when we put the hero into the DOM. Also implement hero into the DOM which is probably part 2 of project.
+                return true;
+            } 
+            else {
+            console.log(`${target.lastname} ${target.firstname} now has ${target.hp} HP.`);
+            return false;
+            }
         }
     }
-
     // Drop weapon method for the monsters to drop weapons
     dropLoot() {
         console.log(`${this.name} dropped loot!`);

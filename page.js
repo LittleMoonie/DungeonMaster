@@ -1,24 +1,25 @@
-// Check if player has saved progress in local storage
-if (localStorage.getItem('gameProgress') !== null) {
-  // Load player's progress data from local storage
-  var progressData = JSON.parse(localStorage.getItem('gameProgress'));
-  var achievements = progressData.achievements; // achievements = []
-  var currentLevel = progressData.currentLevel; // currentLevel = 1
-  var currentStage = progressData.currentStage; // currentStage = 1
+// // Check if player has saved progress in local storage
+// if (localStorage.getItem('gameProgress') !== null) {
+//   // Load player's progress data from local storage
+//   // var progressData = JSON.parse(localStorage.getItem('gameProgress'));
+//   // var achievements = progressData.achievements; // achievements = []
+//   var currentFloor = 1;
+//   var currentStage = 1;
+// } else {
 
-} else {
 
+//   var gameProgress = {
+//       achievements: [],
+//       currentLevel: 1,
+//       currentStage: 1,
+//       currentScore: 0
+//     };
 
-  var gameProgress = {
-      achievements: [],
-      currentLevel: 1,
-      currentStage: 1,
-      currentScore: 0
-    };
+//   gameProgress.score = 100;
+//   gameProgress.level = 2;
 
-  gameProgress.score = 100;
-  gameProgress.level = 2;
-}   
+  let currentFloorHeight = 1;
+  let currentStage = 1;
    
    //make a toggle menu when clicking on a button
     const menuButton = document.querySelector('.menuButton');
@@ -117,7 +118,7 @@ if (localStorage.getItem('gameProgress') !== null) {
 
     var currentFloorDiv = document.querySelector("#floor");
     var currentFloor = document.createElement("span");
-    currentFloor.innerHTML = `<br>${gameProgress.currentLevel} - ${gameProgress.currentStage}`;
+    currentFloor.innerHTML = `<br>${currentFloorHeight} - ${currentStage}`;
     currentFloorDiv.appendChild(currentFloor);
 
 

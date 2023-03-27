@@ -1,13 +1,13 @@
 import { Monster } from './monster.class.js';
 
 /*
-Goblin Class - This class is used to create goblins.
-Goblins have a name, attack, defense, hp, img, and target.
-The target is the hero. Goblins can attack, drop weapons, and drop potions.
-Goblins can also be added to the DOM and removed from the DOM.
+Skeleton Mage Class - This class is used to create Skeleton Mages.
+Skeleton Mages have a name, attack, defense, hp, img, and target.
+The target is the hero. Skeleton Mages can attack, drop weapons, and drop potions.
+Skeleton Mages can also be added to the DOM and removed from the DOM.
 */
 
-export class Goblin extends Monster {
+export class SkelMage extends Monster {
     constructor(name, damage, defense, hp, img) {
         super(name, damage, defense, hp, img);
     }
@@ -31,19 +31,24 @@ export class Goblin extends Monster {
 
     // This is the attack() method from the Monster class.
     attack(target) {
-        console.log('Goblin attacks!');
+        console.log('Skeleton Mage attacks!');
         super.attack(target);
     }
 
     // This is the dropLoot() method from the Monster class.
     // We can override it here to change the behavior of the method.
     dropLoot() {
-        const loot = Math.floor(Math.random() * 3);
-        if (loot === 0) {
+        let loot = "";
+        super.dropLoot();
+        const chance = Math.floor(Math.random() * 2);
+        if (chance === 0) {
             console.log(`${this.name} dropped an HP potion`);
+            return loot = "potion";
+            
         } 
-        else if (item === 1) {
-            console.log(`${this.name} dropped a sword`);
+        else if (chance === 1) {
+            console.log(`${this.name} dropped a weapon`);
+            return loot ="weapon";
         } 
 
         // If we want to add more potions or weapons, we can add them here.
