@@ -1,0 +1,537 @@
+
+html, body {
+    /* Positioning and sizing */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Other Styles */
+    overflow: hidden;
+  
+}
+
+.container, .container#blur.normal{
+    /* Positioning and sizing */
+    position: absolute;
+    left: 50%;
+    top: 59%;
+    width: 98%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+
+    /* Box Styles */
+    border-radius: 100px;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-image: url("./img/floors/floor0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.heroes img {
+    /* Positioning and sizing */
+    width: 10%;
+    height: 10%;
+}
+
+#hero1 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 27%;
+    bottom: 24%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 2;
+}
+
+#hero2 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 32%;
+    bottom: 29%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 1;
+}
+
+#hero3 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 20%;
+    bottom: 24%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 2;
+}
+
+#hero4 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 25%;
+    bottom: 29%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 1;
+}
+
+#hero5 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 13%;
+    bottom: 24%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 2;
+}
+
+#hero6 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 18%;
+    bottom: 29%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 1;
+}
+
+
+
+
+.monsters img {
+    /* Positioning and sizing */
+    width: 10%;
+    height: 100%;
+}
+
+#monster1 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 70%;
+    bottom: 24%;
+    width: 10%;
+    height: 20%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    /* Other Styles */
+    z-index: 3;
+}
+
+#monster2 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 68%;
+    bottom: 28%;
+    width: 10%;
+    height: 20%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 2;
+}
+
+#monster3 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 68%;
+    bottom: 32%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 1;
+}
+
+#monster4 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 80%;
+    bottom: 24%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 3;
+}
+
+#monster5 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 78%;
+    bottom: 28%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 2;
+}
+
+#monster6 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 76%;
+    bottom: 32%;
+    width: 5%;
+    height: 10%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 1;
+}
+
+#monster7 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 90%;
+    bottom: 24%;
+    width: 7%;
+    height: 13%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 3;
+}
+
+#monster8 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 88%;
+    bottom: 28%;
+    width: 10%;
+    height: 20%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Other Styles */
+    z-index: 2;
+}
+
+#monster9 {
+    /* Positioning and sizing */
+    position: absolute;
+    left: 86%;
+    bottom: 32%;
+    width: 7%;
+    height: 13%;
+
+    /* Padding and Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Background Styles */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    /* Other Styles */
+    z-index: 1;
+}
+
+.container2 {
+    position: absolute;
+    background-color: white;
+    top: 6%;
+    bottom: 20%;
+    width: 50%;
+    height: 90%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 4;
+}
+
+#mainMenuTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}
+#floor {
+  /* Have it be beside menuButton  */
+    position: absolute;
+    left: 25%;
+    top: 12%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: grey;
+    height: 10%;
+    width: 20%;
+    border-radius: 2em;
+    border: solid black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 30px;
+    z-index: 1;
+    
+}
+
+#menuButton{
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: grey;
+    height: 10%;
+    width: 20%;
+    border-radius: 2em;
+    border: solid black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 40px;
+    z-index: 1;
+}
+
+#shopButton{
+    display: flex;
+    position: fixed;
+    left: 75%;
+    top: 12%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: grey;
+    height: 10%;
+    width: 20%;
+    border-radius: 2em;
+    border: solid black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 40px;
+    z-index: 1;
+}
+
+#mainMenuButton {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    bottom: 55%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: grey;
+    height: 10%;
+    width: 20%;
+    border-radius: 2em;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 40px;
+    z-index: 1;
+}
+
+#volumeButton {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: grey;
+    height: 10%;
+    width: 20%;
+    border-radius: 2em;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 40px;
+    z-index: 1;
+}
+
+#backButton {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: grey;
+    height: 10%;
+    width: 20%;
+    border-radius: 2em;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 40px;
+    z-index: 1;
+}
+
+#shopTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#backButton:hover, #volumeButton:hover, #mainMenuButton:hover, #menuButton:hover, #floor:hover, #shopButton:hover {
+    background-color: orange;
+    color: white;
+}
+
+.container#blur.active {
+    filter: blur(500px);
+    pointer-events: none;
+    user-select: none;
+  }
